@@ -14,9 +14,6 @@ class ManageCategories extends ManageRecords
     protected function getActions(): array
     {
         return [
-            Actions\ImportAction::make()
-                ->importer(CategoryImporter::class),
-            Actions\CreateAction::make(),
         ];
     }
 }
