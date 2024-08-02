@@ -26,12 +26,6 @@ class Post extends Model
         'published_at' => 'date',
     ];
 
-    /** @return BelongsTo<Author,self> */
-    public function author(): BelongsTo
-    {
-        return $this->belongsTo(Author::class, 'blog_author_id');
-    }
-
     /** @return BelongsTo<Category,self> */
     public function category(): BelongsTo
     {

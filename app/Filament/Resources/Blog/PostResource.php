@@ -5,7 +5,7 @@ namespace App\Filament\Resources\Blog;
 use App\Filament\Resources\Blog\PostResource\Pages;
 use App\Models\Blog\Post;
 use Filament\Forms;
-use Filament\Forms\Components\SpatieTagsInput;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 use Filament\Forms\Form;
 use Filament\Infolists\Components;
 use Filament\Infolists\Infolist;
@@ -55,24 +55,20 @@ class PostResource extends Resource
                             ->maxLength(255)
                             ->unique(Post::class, 'slug', ignoreRecord: true),
 
-                        Forms\Components\MarkdownEditor::make('content')
+//                        Forms\Components\MarkdownEditor::make('content')
+//                            ->required()
+//                            ->columnSpan('full'),
+
+                        TinyEditor::make('content')
                             ->required()
                             ->columnSpan('full'),
 
-                        Forms\Components\Select::make('blog_author_id')
-                            ->relationship('author', 'name')
-                            ->searchable()
-                            ->required(),
-
                         Forms\Components\Select::make('blog_category_id')
                             ->relationship('category', 'name')
-                            ->searchable()
                             ->required(),
 
                         Forms\Components\DatePicker::make('published_at')
                             ->label('Published Date'),
-
-                        SpatieTagsInput::make('tags'),
                     ])
                     ->columns(2),
 
@@ -102,11 +98,6 @@ class PostResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
 
-                Tables\Columns\TextColumn::make('author.name')
-                    ->searchable()
-                    ->sortable()
-                    ->toggleable(),
-
                 Tables\Columns\TextColumn::make('status')
                     ->badge()
                     ->getStateUsing(fn (Post $record): string => $record->published_at?->isPast() ? 'Published' : 'Draft')
@@ -122,12 +113,6 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('published_at')
                     ->label('Published Date')
                     ->date(),
-
-                Tables\Columns\TextColumn::make('comments.customer.name')
-                    ->label('Comment Authors')
-                    ->listWithLineBreaks()
-                    ->limitList(2)
-                    ->expandableLimitedList(),
             ])
             ->filters([
                 Tables\Filters\Filter::make('published_at')

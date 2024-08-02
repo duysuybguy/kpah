@@ -47,11 +47,6 @@ class ManagePostComments extends ManageRelatedRecords
                 Forms\Components\TextInput::make('title')
                     ->required(),
 
-                Forms\Components\Select::make('customer_id')
-                    ->relationship('customer', 'name')
-                    ->searchable()
-                    ->required(),
-
                 Forms\Components\Toggle::make('is_visible')
                     ->label('Approved for public')
                     ->default(true),
