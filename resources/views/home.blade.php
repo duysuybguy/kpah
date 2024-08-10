@@ -42,23 +42,23 @@
                 <img src="https://hocvienninja.vn/img2/Char.png" style="width: 90%;" class="mx-auto">
             </div>
             <div class="download mx-auto d-sm-block">
-                <div class="row flex-md-row flex-column" style="display: flex; justify-content: center; align-items: center">
-                    <div class="col-md-3 col-6 p-1"> <div class="text-center">
+                <div class="row flex-row" style="display: flex; justify-content: center; align-items: center">
+                    <div class="col-md-3 col-4 p-1"> <div class="text-center">
                             <a href="https://apps.apple.com/us/app/h%E1%BB%8Dc-vi%E1%BB%87n-ninja-shinobi-battle/id6474729571" target="_blank" alt="Học viện Ninja: Shinobi Battle APK Android" title="Học viện Ninja: Shinobi Battle iOS">
-                                <img src="https://hocvienninja.vn/img2/DL_bt_IOS.png" style="height:46px !important;"></a>
+                                <img class="w-100" src="https://hocvienninja.vn/img2/DL_bt_IOS.png" style="max-height: 46px; max-width: 126px"></a>
                         </div>
                         <div class="text-center">
                             <a href="https://cdn.g4m.dev/download/88" target="_blank" alt="Học viện Ninja: Shinobi Battle PC" title="Học viện Ninja: Shinobi Battle PC" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Phiên bản: 1.6.0">
-                                <img src="https://hocvienninja.vn/img2/DL_bt_PC.png?v=1" style="height:46px !important;">
+                                <img class="w-100" src="https://hocvienninja.vn/img2/DL_bt_PC.png?v=1" style="max-height: 46px; max-width: 126px">
                             </a>
                         </div>
                         <div class="text-center">
                             <a href="https://cdn.g4m.dev/download/87" target="_blank" alt="Học viện Ninja: Shinobi Battle APK" title="Học viện Ninja: Shinobi Battle APK" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Phiên bản: 1.6.0">
-                                <img src="https://hocvienninja.vn/img2/DL_bt_APK.png?v=1" style="height:46px !important;">
+                                <img class="w-100" src="https://hocvienninja.vn/img2/DL_bt_APK.png?v=1" style="max-height: 46px; max-width: 126px">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 d-flex flex-row napthe align-items-center justify-content-center">
+                    <div class="col-md-6 col-8 d-flex flex-row napthe align-items-center justify-content-center">
                         <div class="col-4 text-center"><a href="https://pay.g4m.vn" target="_blank"><img width="100%" src="https://hocvienninja.vn/img2/DL_Gr_Purchase.png"></a></div>
                         <div class="col-4 text-center"><a href="https://hocvienninja.vn/12/Cap-nhat-ve-dai-ly-tinh-trang-cac-dai-ly.html#news"><img width="100%" src="https://hocvienninja.vn/img2/DL_Gr_DL.png"></a></div>
                         <div class="col-4 text-center"><a href="https://hocvienninja.vn/top"><img width="100%" src="https://hocvienninja.vn/img2/DL_Gr_Rank.png"></a></div>
@@ -98,7 +98,7 @@
                             <div class="p-1"><a href="#"><img class="bottom rounded " src="https://hocvienninja.vn/img2/Event_IMG_1.png" width="100%"></a></div>
                         </div>
                         <!--  d-none d-md-block d-lg-block d-sm-none-->
-                        <div class="col-md-6 col-12 item pt-2 d-block" style="height:300px">
+                        <div class="col-md-6 col-12 item pt-2 d-flex flex-column" style="min-height:300px">
                             <ul class="nav nav-pills pb-1" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active text-white" id="pills-tintuc-tab" data-bs-toggle="pill" data-bs-target="#pills-tintuc" type="button" role="tab" aria-controls="pills-tintuc" aria-selected="true">TIN TỨC</button>
@@ -236,22 +236,22 @@
                                 <div class="menu" id="pills-tab" role="tablist">
                                     <div class="col m-2 iconclass" role="presentation">
                                         <a class="active" href="#" id="pills-wp1-tab" data-bs-toggle="pill" data-bs-target="#pills-wp1" type="button" role="tab" aria-controls="pills-wp1" aria-selected="true">
-                                            <img id="wp1_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_2.png" alt="Hình 1" style="width: 70px;">
+                                            <img id="wp1_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_2.png" alt="Hình 1" style="max-width: 70px;">
                                         </a>
                                         <a href="#" id="pills-wp3-tab" data-bs-toggle="pill" data-bs-target="#pills-wp3" type="button" role="tab" aria-controls="pills-wp3" aria-selected="false" tabindex="-1">
-                                            <img id="wp3_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_3.png" alt="Hình 2" style="width: 70px;">
+                                            <img id="wp3_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_3.png" alt="Hình 2" style="max-width: 70px;">
                                         </a>
                                         <a href="#" id="pills-wp5-tab" data-bs-toggle="pill" data-bs-target="#pills-wp5" type="button" role="tab" aria-controls="pills-wp5" aria-selected="false" tabindex="-1">
-                                            <img id="wp5_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_5.png" alt="Hình 3" style="width: 70px;"></a>
+                                            <img id="wp5_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_5.png" alt="Hình 3" style="max-width: 70px;"></a>
 
                                         <a href="#" id="pills-wp7-tab" data-bs-toggle="pill" data-bs-target="#pills-wp7" type="button" role="tab" aria-controls="pills-wp7" aria-selected="false" tabindex="-1">
-                                            <img id="wp7_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_7.png" alt="Hình 3" style="width: 70px;"></a>
+                                            <img id="wp7_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_7.png" alt="Hình 3" style="max-width: 70px;"></a>
 
                                         <a href="#" id="pills-wp9-tab" data-bs-toggle="pill" data-bs-target="#pills-wp9" type="button" role="tab" aria-controls="pills-wp9" aria-selected="false" tabindex="-1">
-                                            <img id="wp9_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_9.png" alt="Hình 3" style="width: 70px;"></a>
+                                            <img id="wp9_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_9.png" alt="Hình 3" style="max-width: 70px;"></a>
 
                                         <a href="#" id="pills-wp11-tab" data-bs-toggle="pill" data-bs-target="#pills-wp11" type="button" role="tab" aria-controls="pills-wp11" aria-selected="false" tabindex="-1">
-                                            <img id="wp11_btn" class="btn-class" src="https://hocvienninja.vn/img2/WpBG_11.png" alt="Hình 3" style="width: 70px;"></a>
+                                            <img id="wp11_btn" class="btn-class img-icon" src="https://hocvienninja.vn/img2/WpBG_11.png" alt="Hình 3" style="max-width: 70px;"></a>
 
                                     </div>
 
@@ -273,7 +273,7 @@
 
         $( document ).ready(function() {
             document.getElementById("wp1_btn").src="https://hocvienninja.vn/img2/WpBG_2.png";
-        
+
             $(".char .info .menu a").on("click", function() {
                 updateBackground("wp1", 1, 2);
                 updateBackground("wp3", 3, 4);

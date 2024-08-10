@@ -590,5 +590,21 @@
             background-color: #fefadf;
             color: black;
         }
+
+        .img-icon{
+            width: 70px;
+        }
+
+        @media screen and (max-width: 515px) {
+            .img-icon{
+                width: 50px;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+            .img-icon{
+                width: 40px;
+            }
+        }
     </style>
 @endsection
