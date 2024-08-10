@@ -15,7 +15,6 @@ class ViewPost extends ViewRecord
     {
         /** @var Post */
         $record = $this->getRecord();
-
         return $record->title;
     }
 

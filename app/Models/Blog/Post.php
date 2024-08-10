@@ -3,6 +3,7 @@
 namespace App\Models\Blog;
 
 use App\Models\Comment;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -32,9 +33,12 @@ class Post extends Model
         return $this->belongsTo(Category::class, 'blog_category_id');
     }
 
-    /** @return MorphMany<Comment> */
-    public function comments(): MorphMany
+    public function author(): BelongsTo
     {
-        return $this->morphMany(Comment::class, 'commentable');
+        return $this->belongsTo(User::class, 'blog_author_id');
+    }
+
+    public function scopeActive($query){
+        return $query->where('published_at', '<=', now());
     }
 }

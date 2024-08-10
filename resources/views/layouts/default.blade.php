@@ -585,5 +585,10 @@
             background-size: 100% 100% !important;
             padding: 15px;
         }
+
+        .main{
+            background-color: #fefadf;
+            color: black;
+        }
     </style>
 @endsection

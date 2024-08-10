@@ -71,14 +71,6 @@ class PostResource extends Resource
                             ->label('Published Date'),
                     ])
                     ->columns(2),
-
-                Forms\Components\Section::make('Image')
-                    ->schema([
-                        Forms\Components\FileUpload::make('image')
-                            ->image()
-                            ->hiddenLabel(),
-                    ])
-                    ->collapsible(),
             ]);
     }
 
@@ -86,9 +78,6 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image')
-                    ->label('Image'),
-
                 Tables\Columns\TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
@@ -183,7 +172,6 @@ class PostResource extends Resource
                                     Components\Group::make([
                                         Components\TextEntry::make('author.name'),
                                         Components\TextEntry::make('category.name'),
-                                        Components\SpatieTagsEntry::make('tags'),
                                     ]),
                                 ]),
                             Components\ImageEntry::make('image')
@@ -207,7 +195,6 @@ class PostResource extends Resource
         return $page->generateNavigationItems([
             Pages\ViewPost::class,
             Pages\EditPost::class,
-            Pages\ManagePostComments::class,
         ]);
     }
 
@@ -221,7 +208,6 @@ class PostResource extends Resource
         return [
             'index' => Pages\ListPosts::route('/'),
             'create' => Pages\CreatePost::route('/create'),
-            'comments' => Pages\ManagePostComments::route('/{record}/comments'),
             'edit' => Pages\EditPost::route('/{record}/edit'),
             'view' => Pages\ViewPost::route('/{record}'),
         ];

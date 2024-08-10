@@ -7,11 +7,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('form', Form::class);
 Route::get('/', function () {
-    $baiViet = Category::where('slug', 'bai-viet')->first()->posts;
-    $phucLoi = Category::where('slug', 'phuc-loi')->first()->posts;
+    $news = Category::where('slug', 'tintuc')->first()?->posts()->active()->get();
+    $guides = Category::where('slug', 'hd')->first()?->posts()->active()->get();
+    $hots = Category::where('slug', 'ds')->first()?->posts()->active()->get();
     return view('home', [
-        'baiViet' => $baiViet,
-        'phucLoi' => $phucLoi
+        'news' => $news ?? [],
+        'guides' => $guides ?? [],
+        'hots' => $hots ?? []
     ]);
 });
 
