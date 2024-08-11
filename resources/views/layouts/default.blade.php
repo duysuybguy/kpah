@@ -606,5 +606,10 @@
                 width: 40px;
             }
         }
+
+	#main-post img{
+	    height: auto;
+	    max-width: 100%;
+	}
     </style>
 @endsection

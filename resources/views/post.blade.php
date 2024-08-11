@@ -55,7 +55,7 @@
         <img src="https://hocvienninja.vn/img2/Title_1.png" width="70%">
     </div>
     <button type="button" class="btn btn-light" onclick="history.back()">Trở về trang chủ</button>
-    <div class="main px-4 py-4">
+    <div class="main px-4 py-4" id="main-post">
         <h3 class="text-center mb-2">{{ $item->title }}</h3>
         {!! $item->content !!}
     </div>
